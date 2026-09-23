@@ -1,0 +1,6 @@
+{
+  "name": "Brandfluencer Marketplace",
+  "description": "Discover Brandfluencer Marketplace to partner with authentic creators for brand promotion, influencer marketing, and strategic campaigns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

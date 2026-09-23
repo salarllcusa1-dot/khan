@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Anton', 'Bebas Neue', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-heading,
+.font-tanker {
+  font-family: 'Tanker', 'Anton', 'Bebas Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+/* Custom dashed orbit curves */
+.orbit-arc {
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-dasharray: 4 6;
+  fill: none;
+}
+
+/* Subtle float animation for orbiting avatars */
+@keyframes soft-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: soft-float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: soft-float 7s ease-in-out 1.5s infinite;
+}
+
+.animate-float-reverse {
+  animation: soft-float 8s ease-in-out 3s infinite;
+}
